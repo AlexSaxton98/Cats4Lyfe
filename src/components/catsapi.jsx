@@ -2,20 +2,7 @@ import React, { useEffect, useState } from "react"
 
 export const Cat = () => {
     const [data, setData] = useState([{}])
-    const names = [
-        {name:"Luna",price: 278},
-        {name:"Oliver", price:234 },  
-        {name:"Bella", price:487 }, 
-        {name:"Leo", price:375 },
-        {name:"Clyde", price: 524} ,
-        {name:"Jeff", price: 957} ,
-        {name:"Loki", price:126 } ,
-        {name:"Milo", price:835 } , 
-        {name:"Jasper", price:846 } ,
-        {name:"Betty", price: 356} , 
-        {name:"Felicia", price: 237} , 
-        {name:"Pedro", price: 934}]
-        
+    const names = ["Luna", "Oliver", "Bella", "Leo", "Clyde", "Jeff", "Loki", "Milo", "Jasper", "Betty", "Felicia", "Pedro"]
     let catName = names[Math.floor(Math.random() * names.length)]
 
     useEffect(() => {
