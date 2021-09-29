@@ -23,6 +23,5 @@ body{
    transition: 0.5s;
 }
 .catContainer{
-  width: 50px;
   border: solid black 2px;
 }
