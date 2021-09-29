@@ -6,7 +6,7 @@ export const Cat = () => {
     const [data, setData] = useState([{}])
     // const names = ["Luna", "Oliver", "Bella", "Leo", "Clyde", "Jeff", "Loki", "Milo", "Jasper", "Betty", "Felicia", "Pedro"]
     // let catName = names[Math.floor(Math.random() * names.length)]
-    
+
 
     useEffect(() => {
         handleFetch()
@@ -16,15 +16,18 @@ export const Cat = () => {
         let data = await response.json()
         setData(data[0])
         console.log(data)
-
     }
-    
+
     return (
         <div className="catContainer">
-            <img src={data.url} alt="cat" />
-            <CatName/>
-            <CatPrice/>
-            
+            <img id="image" src={data.url} alt="cat" />
+            <div className="catInfo">
+                <CatName />
+                <CatPrice />
+
+            </div>
+
+
         </div>
     )
 }

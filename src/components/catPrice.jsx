@@ -6,22 +6,23 @@
 //         <p>{price}</p>
 //     )
 // }
-    
 
 
-export const CatPrice = () =>{
-    const randomPrice =[200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900]
-    let price = randomPrice[Math.floor(Math.random()*randomPrice.length)]
 
-    const handleClick = () =>{
+export const CatPrice = () => {
+    const randomPrice = [200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900]
+    let price = randomPrice[Math.floor(Math.random() * randomPrice.length)]
+
+    const handleClick = () => {
         console.log(price)
     }
 
-    return(
+    return (
         <div>
-            <p>{price}</p>
+            <p id="catPrice">£{price}</p>
             <button onClick={handleClick}>Add to Basket</button>
         </div>
+
     )
 }
 export default CatPrice;

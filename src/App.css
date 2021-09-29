@@ -10,6 +10,7 @@ body{
 
 .pageTitle{
   color: rgb(231, 229, 74);
+  font-size: xxx-large;
 }
 .basketIcon{
   position:fixed;
@@ -24,4 +25,31 @@ body{
 }
 .catContainer{
   border: solid black 2px;
+  margin:10px;
+  
+}
+#image{
+  width:300px;
+}
+.catInfo{
+  display:flex;
+  background-color: whitesmoke;
+  font-size: x-large;
+  font-weight: bold;
+  justify-content: space-between;
+}
+#catName{
+  margin:10px;
+  margin-left: 20px;
+
+}
+#catPrice{
+  display: flex;
+  margin:10px;
+  width:fit-content;
+}
+button{
+  margin:10px;
+  font-size: 13px;
+  cursor: pointer;
 }

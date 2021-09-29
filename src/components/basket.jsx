@@ -5,12 +5,12 @@ useEffect(() => {
         .then(res => {
             setBasket(res)
         })
-},[])
+}, [])
 
 const addToBasket = (catId, catInfo) => {
 
     if (catInfo) {
-        commerce.basket.add(catId ,1, catInfo)
+        commerce.basket.add(catId, 1, catInfo)
             .then(res => {
                 setBasket(res.basket)
             })
@@ -31,7 +31,7 @@ const addToBasket = (catId, catInfo) => {
 
 return (
     <div className="Basket">
-        <Nav basket={basket} emptyBasket={emptyBasket}/>
+        <Nav basket={basket} emptyBasket={emptyBasket} />
         <Grid centred stackable padded relaxed>
             <Grid.Column className='left-column' width={5}>
                 <LeftPanel />
@@ -39,14 +39,14 @@ return (
             <Grid.Column width={9}>
                 <ProductContainer
                     addToBasket={addToBasket}
-                    />
+                />
             </Grid.Column>
-        </Grid> 
-        <Footer />       
+        </Grid>
+        <Footer />
     </div>
 
 );
-<Nav basket={basket} emptyBasket={emptyBasket}/>
+<Nav basket={basket} emptyBasket={emptyBasket} />
 
-}
+
 
