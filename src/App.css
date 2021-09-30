@@ -56,3 +56,6 @@ button{
   font-size: 13px;
   cursor: pointer;
 }
+.listItems{
+  list-style: none;
+}
