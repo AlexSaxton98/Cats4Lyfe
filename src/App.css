@@ -31,6 +31,9 @@ body{
 #image{
   width:300px;
 }
+#image-small{
+  width:100px;
+}
 .catInfo{
   display:flex;
   background-color: whitesmoke;
