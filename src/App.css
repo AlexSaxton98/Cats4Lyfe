@@ -1,61 +1,98 @@
-body{
-  background-color: rgb(152, 190, 114);
+body {
+  background-color: rgb(11, 0, 73);
 }
 
-.app{
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.pageTitle{
-  color: rgb(231, 229, 74);
+.pageTitle {
+  color: goldenrod;
   font-size: xxx-large;
 }
-.basketIcon{
-  position:fixed;
-    display: block;
-    top: 0px;
-    right: 1%;
+.basketIcon {
+  position: fixed;
+  display: block;
+  top: 0px;
+  right: 1%;
+  transition: 0.5s;
 }
-.basketIcon:hover{
+.basketIcon:hover {
   cursor: pointer;
-  filter:drop-shadow(0em 0em 0.3em rgb(15, 4, 73));
-   transition: 0.5s;
+  transform: scale(1.1);
 }
-.catContainer{
-  border: solid black 2px;
-  margin:10px;
-  
+.catContainer {
+  border: solid rgb(24, 11, 97) 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#image{
-  width:300px;
+#image {
+  width: 400px;
 }
-#image-small{
-  width:100px;
+#image-small {
+  width: 100px;
 }
-.catInfo{
-  display:flex;
+.catInfo {
+  display: flex;
   background-color: whitesmoke;
   font-size: x-large;
   font-weight: bold;
   justify-content: space-between;
+  width: 400px;
 }
-#catName{
-  margin:10px;
+#catName {
+  margin: 10px;
   margin-left: 20px;
-
 }
-#catPrice{
+#catPrice {
   display: flex;
-  margin:10px;
-  width:fit-content;
+  margin: 10px;
+  width: fit-content;
 }
-button{
-  margin:10px;
-  font-size: 13px;
+
+button {
+  margin: 10px;
+  font-size: medium;
+  font-weight: bold;
   cursor: pointer;
 }
-.listItems{
+.listItems {
   list-style: none;
+  font-weight: bold;
+}
+.listItems li button {
+  right: 1%;
+}
+
+.checkoutBasket {
+  display: flex;
+  align-items:flex-start;
+  flex-direction: column;
+  background-color: #484fa8;
+  border-radius: 5px;
+  border: 2px solid goldenrod;
+  padding: 50px;  
+}
+.checkoutBasket li button{
+  align-self:flex-end;
+  background-color:slategrey;
+}
+.itemInfo {
+  display: flex;
+  width: 150px;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkoutInfo{
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkoutButton{
+  background-color: goldenrod;
 }

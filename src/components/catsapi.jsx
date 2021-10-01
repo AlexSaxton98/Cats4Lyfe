@@ -16,7 +16,7 @@ export const Cat = ({ handleClick }) => {
         let data = await response.json()
             const randomPrice = [200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900]
             let price = randomPrice[Math.floor(Math.random() * randomPrice.length)]
-            const names = ["Luna", "Oliver", "Bella", "Leo", "Clyde", "Jeff", "Loki", "Milo", "Jasper", "Betty", "Felicia", "Pedro", "Podrick"]
+            const names = ["Luna", "Geoffrey", "Max", "Pixels", "Serena", "Millie", "Bobby", "Oliver", "Bella", "Leo", "Clyde", "Jeff", "Howard", "Loki", "Milo", "Jasper", "Betty", "Felicia", "Pedro", "Podrick"]
             let catName = names[Math.floor(Math.random() * names.length)]
         data[0].price = price
         data[0].name = catName
@@ -30,6 +30,7 @@ export const Cat = ({ handleClick }) => {
             <div className="catInfo">
                 <CatName  catName={data.name}/>
                 <CatPrice price={data.price} />
+                
                 <button onClick={() => handleClick(data)}>Add to cart</button>
             </div>
 
